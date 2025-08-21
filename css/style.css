@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+@font-face{
+  font-family:'Muller';
+  src:url(../font/Muller\ Regular.woff2) format(woff2),
+  url(../font/Muller\ Regular.woff) format(woff)
+}
+@font-face{
+     font-family:'Roboto' ;
+   src:url('../font/Roboto-Medium.woff2')format(woff2),
+   url('../font/Roboto-Medium.woff')format(woff);
+   font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+ul{
+  list-style-type: none;
+  
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+/* header*/
+.main-nav, .nav, .header{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  height: 88px;
+  gap:60px;
+}
+.nav-link{
+  color:#121712;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.5s ease;
+}
+.search{
+  padding-left: 70px;
+}
+.microphone{
+ padding-left:640px;
+}
+.nav-link:hover{
+  background-color:#6D31EE;
+}
+.nav-link:focus-visible{
+  background-color: #AA9DFA;
+  color:#fff;
+}
+.nav-link:active{
+  background-color: #4F28A5;
+}
+/*hero */
+.hero-paragraph{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color:#121712;
+}
+.hero-img{
+  padding-left:650px;
+  height: 370px;
+  padding-top: 45px;
+}
+.hero-title{
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+.hero-section{
+  width: 100%;
+}
+/*Подкасты*/
+.last-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  gap: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+height: 140px;
+
+}
+.item img {
+  width: 120px;
+  height: 140px;
+}
+.span{
+  font-weight: 400;
+  font-size:12px;
+  line-height: 100%;
+  color:#121712
+}
+.Подкасты-title{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color:#121712;
+  margin:0;
+  padding-top:15px;
+}
+.Подкасты-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  color:#A1A6B4;
+  margin:0;
+}
+.Подкасты{
+  padding:15px 0;
+}
+.Подкасты-wrap{
+  font-weight:400 ;
+  font-size: 48px;
+  color:#121723;
+  padding-top:60px ;
+}
+/*Передачи*/
+.Передачи{ 
+ display: flex;
+ flex-wrap: wrap; 
+ gap:20px;
+ }
+ .Передачи-wrap{ 
+  background: #f9f9f9; 
+  border: 1px solid #E6E8EC; 
+}
+.Передачи-img{ 
+  height: 148px; 
+  width: 255px;
+ }
+ .last-item-Передачи{ 
+  padding:20px 0 20px 16px; 
+}
+.Передачи-title{ 
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 100%; 
+  margin: 0; 
+  color: #121712;
+ }
+ .Передачи-paragraph{ 
+  font-weight: 400; 
+  font-size: 12px; 
+  line-height: 100%; 
+  color:#A1A6B4;
+   padding-bottom: 20px;
+ }
+   
+.Передачи-span{ 
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 100%;
+ color:#121712; 
+}
+.Передачи-list{ 
+  font-weight: 400;
+ }
+ .Передачи-text{ 
+  font-weight: 400; 
+  font-size:16px; 
+  line-height: 150%; 
+  color:#A1A6B4; 
+  white-space: normal; 
+  width: 255px; 
+}
+
+
