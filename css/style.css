@@ -538,24 +538,108 @@ fill:#4F28A5;
   line-height: 160%;
   color:#A1A6B4;
 }
-.line{
-  padding-top:30px;
+.divider {
   display: flex;
-  gap:2px;
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+  height: 361px;
+  margin-bottom:30px;
+}
+.divider-img {
+  width: 255px;
+  height: 255px;
+}
+.line{
+  display:flex;
+  gap:30px;
 }
 .contant-2{
   font-weight: 500;
   font-size: 20px;
-line-height: 100%;
-color:#fff;
+  line-height: 100%;
+  color: #fff;
 }
 .meta{
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height:24px;
+  margin:0;
   color:#A1A6B4;
 }
-.divider-img{
-  width:255px ;
-  height:255px ;
+textarea{
+  border:1px solid #fff;
+  border-radius: 30px;
+  width: 920px;
+  height: 150px;
+  padding:30px 10px 10px 32px;
+  background-color: #121723;
+  margin-left:10px;
+  font-size:20px;
+  font-weight: 400;
+  color:#A1A6B4;
+  margin-bottom:30px;
+}
+.row  input {
+  width: 445px;
+  height: 70px;
+  border:2px solid #fff;
+  border-radius: 40px;
+  padding:10px 10px 10px 32px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #A1A6B4;
+    background-color: #121723;
+    gap:30px;
+    margin-left:10px;
+    transition: 0.5s ease;
+}
+.form-sumbit{
+ display: flex;
+ flex-wrap: wrap;
+}
+.form-button{
+  width: 212px;
+  height:70 ;
+  border:1px solid #6D31EE;
+  border-radius: 40px;
+ padding:25px 54px 25px 54px;
+ background-color: #6D31EE;
+ margin-left:10px;
+ font-family: 500;
+font-size: 20px;
+color:#fff;
+margin-top: 30px;
+}
+.checkbox-area {
+  display: flex;
+  align-items: center; 
+  gap: 8px;      
+  margin-top: 30px;     
+}
+.checkbox-area input {
+  width: 16px;
+  height: 16px; 
+  background-color: #121723;
+}
+.list{
+  font-weight: 500;
+  font-size:12px;
+  color:#fff;
+}
+.row input:hover,
+.form-box textarea:hover{
+  background-color: #A1A6B4;
+}
+.row input:focus{
+  border-color:#AA9DFA;
+}
+.row input:focus,
+.form-box textarea:focus{
+  border-color: #AA9DFA;
+  outline: none;
+}
+.row input:not(:placeholder-shown),
+.form-box textarea:not(:placeholder-shown){
+  color:#fff;
 }
