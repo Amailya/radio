@@ -7,19 +7,25 @@
   font-family:'Muller';
   src:url('../font/Muller\ Regular.woff2') format(woff2),
   url('../font/muller-medium.woff') format(woff);
+   font-display: swap;
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face{
      font-family:'Muller' ;
    src:url('../font/muller-medium.woff2')format(woff2),
    url('../font/Muller\ Regular.woff')format(woff);
    font-display: swap;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face{
-  font-family:'Roboto';
-  src:url('../font/Roboto-Bold.woff2') format(woff2),
-url('../font/Roboto-Medium.woff') format(woff);
+  font-family:'Muller';
+  src:url('../font/Muller\ Bold.woff2') format(woff2),
+url('../font/Muller\ Bold.woff') format(woff);
+ font-display: swap;
+    font-weight:700;
+    font-style: normal;
 }
 ul{
   list-style-type: none;
@@ -51,15 +57,23 @@ body{
   transition: 0.5s ease;
 }
 .search{
-  padding-left: 70px;
+  margin-left:45px;
+  transition: 0.5s ease;
 }
-.microphone{
- padding-left:640px;
+.search:hover{
+  path{
+stroke: #AA9DFA;
+  }
+}
+.search:focus{
+  path{
+  stroke: #4F28A5;
+  }
 }
 .nav-link:hover{
-  background-color:#6D31EE;
+ color:#6D31EE;
 }
-.nav-link:focus-visible{
+.nav-link:focus{
   background-color: #AA9DFA;
   color:#fff;
 }
@@ -67,29 +81,68 @@ body{
   background-color: #4F28A5;
 }
 /*hero */
-.hero-paragraph{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  color:#121712;
-  width: 365px;
-}
-.hero-img{
-width: 350px;
-}
-.hero-titele{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero-last-item{
   padding-top:94px;
+}
+.hero{
+  display: flex;
+  active{
+    display: flex;
+    align-items: center;
+  gap:15px;
+  margin: 0;
+  padding: 0;
+  height: 61px;
+  }
+}
+.hero-span{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: #121723;
+}
+.hero-p{
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color:#121723;
+}
+.hero-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color:#121723;
+  margin-top:0;
+  width: 635px;
+  margin-top:14px;
+}
+.hero-button{
+  border: 1px solid #6D31EE;
+  border-radius: 40px;
+  padding: 25px 54px 25px 54px;
+  background-color: #6D31EE;
+  font-weight: 500;
+  font-size: 20px;
+  color:#fff;
+margin-top:45px;
+transition: 0.4s ease;
+}
+.hero-button:hover{
+  background-color: #AA9DFA;
+}
+.hero-button:focus{
+  border-color: 2px #4F28A5;
+}
+.hero-button:active{
+  background-color: #4F28A5;
 }
 /*Подкасты*/
 .last-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 20px;
+  gap: 30px;
+ background-color: #D2D5DD;
 }
-
 .item {
   display: flex;
   gap: 15px;
@@ -295,7 +348,7 @@ color: #fff;
 .Плейлисты-contant{
   display: flex;
 flex-wrap: wrap;
-  gap:5px;
+  gap:30px;
   margin-top:100px;
 }
 .Плейлисты-text{
@@ -408,14 +461,101 @@ color:#121723;
   color:#121723
 }
 /*footer*/
-.footer{
-  background-color: #292E39;
+.footer {
   display: flex;
-  align-items:center;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  background-color: #292E39;
+  position: relative;
+}
+.footer-last-item{
+ display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer-icons{
+  display: flex;
+  gap:21px;
+  margin:0;
+  padding: 0;
 }
 .footer-wrap{
   display:flex;
   gap:45px;
-
+  font-weight: 400;
+  font-size: 16px;
+  color:#fff;
+margin: 0;
+padding: 0;
+}
+.footer-img{
+  width: 24px;
+  height: 24px;
+  transform: 0.5s ease;
+}
+.footer-img:hover{
+  path{
+    fill:#6D31EE;
+  }
+}
+.footer-img:focus{
+  path{
+    fill:#AA9DFA;
+  }
+}
+.footer-img:active{
+  path{
+fill:#4F28A5;
+  }
+}
+/*О нас*/
+.wraper{
+  background-color: #121723;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.О нас-wrap{
+  display: flex;
+}
+.О нас-title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color:#fff;
+}
+.О нас-span{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color:#A1A6B4;
+}
+.О нас-p{
+  font-weight: 400;
+  font-size:20px;
+  line-height: 160%;
+  color:#A1A6B4;
+}
+.line{
+  padding-top:30px;
+  display: flex;
+  gap:2px;
+}
+.contant-2{
+  font-weight: 500;
+  font-size: 20px;
+line-height: 100%;
+color:#fff;
+}
+.meta{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color:#A1A6B4;
+}
+.divider-img{
+  width:255px ;
+  height:255px ;
 }
