@@ -475,6 +475,8 @@ color:#121723;
   flex-direction: column; 
   align-items: flex-start;
   gap: 10px;
+  padding-top:95px;
+  padding-bottom: 100px;
 }
 .footer-icons{
   display: flex;
@@ -488,8 +490,8 @@ color:#121723;
   font-weight: 400;
   font-size: 16px;
   color:#fff;
-margin: 0;
-padding: 0;
+padding-bottom: 100px;
+padding-top:95px;
 }
 .footer-img{
   width: 24px;
@@ -510,6 +512,9 @@ padding: 0;
   path{
 fill:#4F28A5;
   }
+}
+.img{
+  margin-left: 380px;
 }
 /*О нас*/
 .wraper{
