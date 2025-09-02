@@ -4,28 +4,28 @@
 	box-sizing: border-box;
 }
 @font-face{
-  font-family:'Muller';
-  src:url('../font/Muller\ Regular.woff2') format(woff2),
-  url('../font/muller-medium.woff') format(woff);
-   font-display: swap;
-    font-weight: 400;
-    font-style: normal;
+font-family:'Muller';
+src:url('../font/Muller\ Regular.woff2') format(woff2),
+url('../font/muller-medium.woff') format(woff);
+font-display: swap;
+font-weight: 400;
+font-style: normal;
 }
 @font-face{
-     font-family:'Muller' ;
-   src:url('../font/muller-medium.woff2')format(woff2),
-   url('../font/Muller\ Regular.woff')format(woff);
-   font-display: swap;
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face{
-  font-family:'Muller';
-  src:url('../font/Muller\ Bold.woff2') format(woff2),
-url('../font/Muller\ Bold.woff') format(woff);
+ font-family:'Muller' ;
+ src:url('../font/muller-medium.woff2')format(woff2),
+ url('../font/Muller\ Regular.woff')format(woff);
  font-display: swap;
-    font-weight:700;
-    font-style: normal;
+ font-weight: 500;
+ font-style: normal;
+}
+@font-face{
+font-family:'Muller';
+src:url('../font/Muller\ Bold.woff2') format(woff2),
+url('../font/Muller\ Bold.woff') format(woff);
+font-display: swap;
+font-weight:700;
+font-style: normal;
 }
 ul{
   list-style-type: none;
@@ -38,26 +38,29 @@ a{
   text-decoration: none;
 }
 body{
-  max-width: 1110px;
-  margin: 0 auto;
   font-family: 'Muller';
 }
 /* header*/
+.header-section{
+  max-width: 1110px;
+  margin:0 auto;
+}
 .main-nav, .nav, .header{
   display: flex;
   align-items:center;
   justify-content: space-between;
   height: 88px;
-  gap:60px;
+  gap:57.8px;
 }
 .nav-link{
-  color:#121712;
-  font-size: 20px;
-  font-weight: 400;
+  font-weight:400;
+  font-size:20px;
+  line-height:100%;
+  color:#121723;
   transition: 0.5s ease;
 }
 .search{
-  margin-left:45px;
+  margin-left:130px;
   transition: 0.5s ease;
 }
 .search:hover{
@@ -65,7 +68,7 @@ body{
 stroke: #AA9DFA;
   }
 }
-.search:focus{
+.search:active{
   path{
   stroke: #4F28A5;
   }
@@ -84,12 +87,14 @@ stroke: #AA9DFA;
 .hero-last-item{
   padding-top:94px;
 }
-.hero{
+.hero-section{
   display: flex;
+  gap:125px;
+  max-width: 1110px;
+  margin:0 auto;
   active{
     display: flex;
     align-items: center;
-  gap:15px;
   margin: 0;
   padding: 0;
   height: 61px;
@@ -99,7 +104,7 @@ stroke: #AA9DFA;
   font-weight: 700;
   font-size: 60px;
   line-height: 100%;
-  color: #121723;
+  color:#121723;
 }
 .hero-p{
   font-weight: 400;
@@ -124,8 +129,8 @@ stroke: #AA9DFA;
   font-weight: 500;
   font-size: 20px;
   color:#fff;
-margin-top:45px;
-transition: 0.4s ease;
+  margin-top:30px;
+  transition: 0.4s ease;
 }
 .hero-button:hover{
   background-color: #AA9DFA;
@@ -136,20 +141,30 @@ transition: 0.4s ease;
 .hero-button:active{
   background-color: #4F28A5;
 }
+.mikrafon{
+  width: 350px;
+  height: 372px;
+  margin-top: 38px;
+}
 /*Подкасты*/
-.last-item {
+.Подкасты-section{
+ background-color: #D2D5DD;
+ padding-bottom:94px;
+}
+.black{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.Подкасты-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 30px;
- background-color: #D2D5DD;
 }
 .item {
   display: flex;
   gap: 15px;
   background: #f9f9f9;
-  border-radius: 12px;
-height: 140px;
-
+  height: 140px;
 }
 .item img {
   width: 120px;
@@ -175,26 +190,28 @@ height: 140px;
   color:#A1A6B4;
   margin:0;
 }
-.Подкасты{
+.Подкасты-content{
   padding:15px 0;
 }
 .Подкасты-wrap{
   font-weight:400 ;
   font-size: 48px;
   color:#121723;
-  padding-top:60px ;
+  padding-top:94px ;
 }
 /*Передачи*/
 .Передачи-section{
   padding-top: 100px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
+  max-width: 1110px;
+  margin:0 auto;
 }
 .Передачи{ 
- display: flex;
- flex-wrap: wrap; 
- gap:20px;
- padding-left: 100px;
- padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap:30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
  }
  .Передачи-wrap{ 
   background: #f9f9f9; 
@@ -204,7 +221,7 @@ height: 140px;
   height: 148px; 
   width: 255px;
  }
- .last-item-Передачи{ 
+ .Передачи-content{ 
   padding:20px 0 20px 16px; 
 }
 .Передачи-title{ 
@@ -219,17 +236,20 @@ height: 140px;
   font-size: 12px; 
   line-height: 100%; 
   color:#A1A6B4;
-   padding-bottom: 20px;
  }
-.Передачи-span{ 
- font-weight: 400;
- font-size: 16px;
- line-height: 100%;
- color:#121712; 
- transition: 1s ease;
+ .Передачи-span{ 
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 100%;
+   color:#121712; 
+   transition: 1s ease;
 }
 .Передачи-list{ 
   font-weight: 400;
+  font-size:48px;
+  line-height:100%;
+  color:#121723;
+  margin-top:1px;
  }
  .Передачи-text{ 
   font-weight: 400; 
@@ -240,27 +260,28 @@ height: 140px;
   width: 255px; 
 }
 .active{
-   display: flex;
- flex-wrap: wrap; 
- gap:20px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap:25px;
 }
 .break{
-padding-top: 100px;
-display: flex;
-flex-direction: column;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
 }
  .break-img{
   width:65px ;
   height: 89px;
  }
  .button-Архив{
-  padding: 17px 43px 17px 43px;
-  border: 2px solid #121723;
-  border-radius: 77px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-
+   width:160px;
+   height:40px;
+   border: 2px solid #121723;
+   border-radius: 77px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   margin-top:25px;
  }
  .Передачи-span :hover{
   color:#6D31EE;
@@ -270,19 +291,24 @@ flex-direction: column;
   color:#fff;
  }
  .Передачи-span :active{
-background-color: #4F28A5;
-color:#fff;
+  background-color: #4F28A5;
+  color:#fff;
  }
-/*Гости*/
+ /*Гости*/
 .Гости-section{
   background-color: #121723;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
+}
+.Гости{
+  max-width:1110px;
+  margin:0 auto;
 }
 .Гости-contant{
   display:flex;
   flex-wrap: wrap;
   gap:50px;
+  margin-top:50px;
 }
 .Гости-last-item{
   display:flex;
@@ -317,6 +343,7 @@ color:#fff;
   line-height: 180%;
   font-size: 16px;
   color:#A1A6B4;
+  margin-bottom: 88px;
 }
 .Гости-item{
   padding-left:30px;
@@ -333,8 +360,8 @@ color:#fff;
   transition: 0.3s ease;
 }
 .Гости-button:hover{
-background-color: #AA9DFA;
-color: #fff;
+  background-color: #AA9DFA;
+  color: #fff;
 }
 .Гости-button:focus{
   background-color: #6D31EE;
@@ -345,11 +372,19 @@ color: #fff;
   color: #fff;
 }
 /* Плейлисты*/
+.Плейлисты-section{
+  max-width: 1110px;
+  margin:0 auto;
+}
+.Плейлисты{
+  display:flex;
+  flex-direction: column;
+}
 .Плейлисты-contant{
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap:30px;
-  margin-top:100px;
+  padding-top: 110px;
 }
 .Плейлисты-text{
   font-weight: 500;
@@ -357,6 +392,7 @@ flex-wrap: wrap;
   line-height: 16px;
   color: #121723;
   margin:0;
+  padding-bottom: 4px;
 }
 .Плейлисты-paragraph{
   font-weight: 400;
@@ -378,17 +414,18 @@ flex-wrap: wrap;
 }
 .Плейлисты-title{
   font-weight: 400;
-  font-size: 48ox;
+  font-size: 48px;
   line-height: 100%;
   color:#121723;
   height: 48px;
+  margin: 0;
 }
 .p{
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color:#A1A6B4;
-width: 350px;
+  width: 350px;
 }
 .container{
 display: flex;
@@ -396,34 +433,47 @@ flex-wrap: wrap;
 gap:30px;
 margin-left: 380px;
 margin-top:30px;
-padding-bottom: 94px;
+padding-bottom: 108px;
 }
 .Плейлисты-span{
-  padding:16px 5px ;
+  padding:16px 16px ;
+}
+.img-1{
+  width:131px;
+  height: 22px;
+}
+.img-2{
+  width: 30px;
+  height: 30px;
 }
 /*home*/
-.home-section{
-  background-color: #292E39;
-  display: flex;               
+.home-last-item{
+max-width: 1110px;
+margin: 0 auto;
+    display: flex;               
   align-items: center;        
   justify-content: center;     
   gap: 40px;                  
   padding: 40px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 90px;
+  padding-bottom: 120px;
 }
-
+.home-section{
+background-color: #292E39;
+}
 .home-title{
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
   color:#F0D288;
+  margin-top:5px;
 }
 .home-p{
   line-height: 180%;
   font-size: 16px;
   font-weight: 400;
   color:#fff;
+  margin: 0;
 }
 .home-text{
   font-weight: 500;
@@ -446,6 +496,7 @@ padding-bottom: 94px;
 .home-active{
   display: flex;
   flex-direction: column;
+  gap:5px;
 }
 .home-button:hover{
   background-color: #F0D288;
@@ -460,84 +511,44 @@ color:#121723;
   background-color: #BB973E;
   color:#121723
 }
-/*footer*/
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 20px 40px;
-  background-color: #292E39;
+.radio-wrap{
   position: relative;
+  display: inline-block;
 }
-.footer-last-item{
- display: flex;
-  flex-direction: column; 
-  align-items: flex-start;
-  gap: 10px;
-  padding-top:95px;
-  padding-bottom: 100px;
+.radio{
+  display:block;
+  width: 640px;
 }
-.footer-icons{
-  display: flex;
-  gap:21px;
-  margin:0;
-  padding: 0;
+.label{
+  position: absolute;
+  top:10px;
 }
-.footer-wrap{
-  display:flex;
-  gap:45px;
-  font-weight: 400;
-  font-size: 16px;
-  color:#fff;
-padding-bottom: 100px;
-padding-top:95px;
-}
-.footer-img{
-  width: 24px;
-  height: 24px;
-  transform: 0.5s ease;
-}
-.footer-img:hover{
-  path{
-    fill:#6D31EE;
-  }
-}
-.footer-img:focus{
-  path{
-    fill:#AA9DFA;
-  }
-}
-.footer-img:active{
-  path{
-fill:#4F28A5;
-  }
-}
-.img{
-  margin-left: 380px;
-}
-/*О нас*/
-.wraper{
+/*О нас*/
+.О нас-section{
   background-color: #121723;
-  padding-top: 94px;
+}
+.wraper{
+  width: 1110px;
+  margin:0 auto;
+  padding-top: 80px;
   padding-bottom: 94px;
 }
-.О нас-wrap{
+.нас-wrap{
   display: flex;
 }
-.О нас-title{
+.нас-title{
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
   color:#fff;
 }
-.О нас-span{
+.нас-span{
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
   color:#A1A6B4;
 }
-.О нас-p{
+.нас-p{
   font-weight: 400;
   font-size:20px;
   line-height: 160%;
@@ -564,6 +575,8 @@ fill:#4F28A5;
   font-size: 20px;
   line-height: 100%;
   color: #fff;
+  padding-top:10px;
+  padding-bottom:5px;
 }
 .meta{
   font-weight: 400;
@@ -594,10 +607,10 @@ textarea{
   font-weight: 400;
   font-size: 20px;
   color: #A1A6B4;
-    background-color: #121723;
-    gap:30px;
-    margin-left:10px;
-    transition: 0.5s ease;
+  background-color: #121723;
+  gap:30px;
+  margin-left:10px;
+  transition: 0.5s ease;
 }
 .form-sumbit{
  display: flex;
@@ -608,24 +621,19 @@ textarea{
   height:70 ;
   border:1px solid #6D31EE;
   border-radius: 40px;
- padding:25px 54px 25px 54px;
- background-color: #6D31EE;
- margin-left:10px;
- font-family: 500;
-font-size: 20px;
-color:#fff;
-margin-top: 30px;
+  padding:25px 54px 25px 54px;
+  background-color: #6D31EE;
+  margin-left:10px;
+  font-family: 500;
+  font-size: 20px;
+  color:#fff;
+  margin-top: 30px;
 }
 .checkbox-area {
   display: flex;
   align-items: center; 
   gap: 8px;      
   margin-top: 30px;     
-}
-.checkbox-area input {
-  width: 16px;
-  height: 16px; 
-  background-color: #121723;
 }
 .list{
   font-weight: 500;
@@ -647,4 +655,77 @@ margin-top: 30px;
 .row input:not(:placeholder-shown),
 .form-box textarea:not(:placeholder-shown){
   color:#fff;
+}
+/*footer*/
+.footer{
+  background-color: #292E39;  
+  padding-top:70px;
+}
+.footer-last-item{
+  max-width: 1110px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding-bottom: 100px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 15px;
+  padding-top:10px;
+}
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-icons li {
+  display: flex;
+  align-items: center;
+}
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-wrap{
+  font-weight: 400;
+  font-size: 16px;
+  color:#fff;
+  display: flex;
+  gap:60px;
+  line-height: 180%;
+}
+.vector-img{
+  margin:0 auto;
+}
+.footer-vector{
+  width: 1500px;
+}
+.W-Wave{
+padding-left:700px;
+}
+.footer-img:hover{
+  path{
+  fill:#6D31EE;
+  }
+}
+.footer-img:focus{
+  path{
+    fill:#AA9DFA;
+  }
+}
+.footer-img:active{
+  path{
+    fill:#4F28A5;
+  }
+}
+.footer-img{
+transition: 0.5s ease;
 }
