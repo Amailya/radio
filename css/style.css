@@ -81,7 +81,7 @@ stroke: #AA9DFA;
   color:#fff;
 }
 .nav-link:active{
-  background-color: #4F28A5;
+color: #4F28A5;
 }
 /*hero */
 .hero-last-item{
@@ -99,7 +99,7 @@ stroke: #AA9DFA;
   padding: 0;
   height: 61px;
   }
-}
+  }
 .hero-span{
   font-weight: 700;
   font-size: 60px;
@@ -135,7 +135,7 @@ stroke: #AA9DFA;
 .hero-button:hover{
   background-color: #AA9DFA;
 }
-.hero-button:focus{
+.hero-button:focus-visible{
   border-color: 2px #4F28A5;
 }
 .hero-button:active{
@@ -225,7 +225,7 @@ stroke: #AA9DFA;
   padding:20px 0 20px 16px; 
 }
 .Передачи-title{ 
-  font-weight: 400; 
+  font-weight: 500; 
   font-size: 20px; 
   line-height: 100%; 
   margin: 0; 
@@ -242,7 +242,7 @@ stroke: #AA9DFA;
    font-size: 16px;
    line-height: 100%;
    color:#121712; 
-   transition: 1s ease;
+   transition: 0.3s ease;
 }
 .Передачи-list{ 
   font-weight: 400;
@@ -283,17 +283,25 @@ stroke: #AA9DFA;
    line-height: 100%;
    margin-top:25px;
  }
- .Передачи-span :hover{
+ .Передачи-span:hover{
   color:#6D31EE;
  }
- .Передачи-span:focus{
+ .Передачи-span:focus-visible{
   background-color: #AA9DFA;
   color:#fff;
  }
- .Передачи-span :active{
-  background-color: #4F28A5;
-  color:#fff;
+ .Передачи-span:active{
+  color: #4F28A5;
  }
+ .Передачи-span:hover path{
+  fill:#6D31EE;
+ }
+.Передачи-span:focus path{
+  fill:#fff;
+}
+.Передачи-span:active path{
+  fill:#4F28A5;
+}
  /*Гости*/
 .Гости-section{
   background-color: #121723;
@@ -432,7 +440,7 @@ display: flex;
 flex-wrap: wrap;
 gap:30px;
 margin-left: 380px;
-margin-top:30px;
+padding-top:5px;
 padding-bottom: 108px;
 }
 .Плейлисты-span{
@@ -541,6 +549,7 @@ color:#121723;
   font-size: 48px;
   line-height: 100%;
   color:#fff;
+  margin:0;
 }
 .нас-span{
   font-weight: 700;
@@ -569,6 +578,7 @@ color:#121723;
 .line{
   display:flex;
   gap:30px;
+  padding-top:10px;
 }
 .contant-2{
   font-weight: 500;
@@ -617,17 +627,16 @@ textarea{
  flex-wrap: wrap;
 }
 .form-button{
-  width: 212px;
   height:70 ;
   border:1px solid #6D31EE;
   border-radius: 40px;
   padding:25px 54px 25px 54px;
   background-color: #6D31EE;
   margin-left:10px;
-  font-family: 500;
+  font-weight: 500;
   font-size: 20px;
   color:#fff;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .checkbox-area {
   display: flex;
@@ -641,20 +650,24 @@ textarea{
   color:#fff;
 }
 .row input:hover,
-.form-box textarea:hover{
+textarea:hover{
   background-color: #A1A6B4;
 }
 .row input:focus{
   border-color:#AA9DFA;
 }
 .row input:focus,
-.form-box textarea:focus{
+textarea:focus{
   border-color: #AA9DFA;
   outline: none;
 }
 .row input:not(:placeholder-shown),
-.form-box textarea:not(:placeholder-shown){
+textarea:not(:placeholder-shown){
   color:#fff;
+}
+input[type="email"]:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+  background-color: #121723;
 }
 /*footer*/
 .footer{
@@ -674,7 +687,7 @@ textarea{
   flex-direction: column; 
   align-items: flex-start;
   gap: 15px;
-  padding-top:10px;
+  padding-top:20px;
 }
 .footer-icons {
   display: flex;
