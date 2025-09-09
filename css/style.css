@@ -41,7 +41,7 @@ body{
   font-family: 'Muller';
 }
 /* header*/
-.header-section{
+.header{
   max-width: 1110px;
   margin:0 auto;
 }
@@ -85,20 +85,20 @@ color: #4F28A5;
 }
 /*hero */
 .hero-last-item{
-  padding-top:94px;
+   padding-top:94px;
 }
 .hero-section{
-  display: flex;
+    display: flex;
   gap:125px;
   max-width: 1110px;
   margin:0 auto;
-  active{
+  }
+  .hero-active{
     display: flex;
     align-items: center;
   margin: 0;
   padding: 0;
   height: 61px;
-  }
   }
 .hero-span{
   font-weight: 700;
@@ -151,7 +151,7 @@ color: #4F28A5;
  background-color: #D2D5DD;
  padding-bottom:94px;
 }
-.black{
+.Подкасты{
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -531,6 +531,9 @@ color:#121723;
   position: absolute;
   top:10px;
 }
+.home-vector{
+  width: 400px;
+}
 /*О нас*/
 .О нас-section{
   background-color: #121723;
@@ -741,4 +744,93 @@ padding-left:700px;
 }
 .footer-img{
 transition: 0.5s ease;
+}
+@media (max-width: 1024px) {
+  .hero-section{
+    width: 823px;
+    margin:0 auto;
+    gap:30px;
+  }
+  .home-last-item{
+    width: 823px;
+    margin:0 auto;
+  }
+.Плейлисты-section{
+  width: 823px;
+  margin:0 auto;
+}
+  .Плейлисты-contant,
+  .container {
+    justify-content: center;
+  }
+
+  .Плейлисты-last-item {
+    flex-direction: row;      /* նկար ձախ, տեքստ աջ */
+    align-items: center;
+    width: 100%;              /* լայնությունը ամբողջ տողի */
+    max-width: 250px;         /* մի քիչ սահմանափակում */
+    height: auto;
+  }
+
+  .Плейлисты-img {
+    width: 120px;   /* նկարի չափ */
+    height: auto;
+  }
+
+  .Плейлисты-span {
+    padding: 8px 12px;
+  }
+
+  .Плейлисты-contant {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .Плейлисты-last-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 հատ կողք-կողքի */
+  }
+  .radio{
+    width:397px;
+  }
+  .Подкасты{
+    width: 823px;
+    margin:0 auto;
+  }
+  .wraper{
+    width: 823px;
+    margin:0 auto;
+  }
+  .нас-img{
+    display:none;
+  }
+  .нас{
+  width:255px;
+  height: 255px;  
+  margin-top:100px;
+  }
+  .divider-img {
+  width: 397px;
+  height: 255px;
+  }
+  .line{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .divider{
+    width: 397px;
+  }
+  textarea{
+    width: 824px;
+  }
+.row{
+  display: flex;
+}
+  .Гости{
+    width: 823px;
+    margin:0 auto;
+  }
+  .footer-last-item{
+    width: 823px;
+    margin:0 auto;
+  }
 }
