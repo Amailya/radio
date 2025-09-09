@@ -759,36 +759,7 @@ transition: 0.5s ease;
   width: 823px;
   margin:0 auto;
 }
-  .Плейлисты-contant,
-  .container {
-    justify-content: center;
-  }
-
-  .Плейлисты-last-item {
-    flex-direction: row;      /* նկար ձախ, տեքստ աջ */
-    align-items: center;
-    width: 100%;              /* լայնությունը ամբողջ տողի */
-    max-width: 250px;         /* մի քիչ սահմանափակում */
-    height: auto;
-  }
-
-  .Плейлисты-img {
-    width: 120px;   /* նկարի չափ */
-    height: auto;
-  }
-
-  .Плейлисты-span {
-    padding: 8px 12px;
-  }
-
-  .Плейлисты-contant {
-    gap: 20px;
-    justify-content: space-between;
-  }
-
-  .Плейлисты-last-item {
-    flex: 1 1 calc(33.333% - 20px); /* 3 հատ կողք-կողքի */
-  }
+  
   .radio{
     width:397px;
   }
