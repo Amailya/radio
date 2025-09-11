@@ -45,12 +45,16 @@ body{
   max-width: 1110px;
   margin:0 auto;
 }
-.main-nav, .nav, .header{
-  display: flex;
+.header-top{
+ display: grid;
   align-items:center;
-  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
   height: 88px;
-  gap:57.8px;
+}
+.nav ul{
+display: flex;
+justify-content:center;
+gap:57.8px;
 }
 .nav-link{
   font-weight:400;
@@ -167,7 +171,7 @@ color: #4F28A5;
   height: 140px;
 }
 .item img {
-  width: 120px;
+  width: 112px;
   height: 140px;
 }
 .span{
@@ -446,13 +450,23 @@ padding-bottom: 108px;
 .Плейлисты-span{
   padding:16px 16px ;
 }
-.img-1{
-  width:131px;
-  height: 22px;
+.w-wave{
+  font-weight: 400;
+  color:#A1A6B4;
+  font-size:16px;
+  line-height:22px;
+  margin:0;
 }
-.img-2{
-  width: 30px;
+.p-18{
+  width:30px;
   height: 30px;
+  border: 1px solid #A1A6B4;
+  border-radius: 100px;
+  padding:7px;
+  font-weight: 400;
+  font-size:12px;
+  color:#A1A6B4;
+  margin:0;
 }
 /*home*/
 .home-last-item{
@@ -722,10 +736,14 @@ input[type="email"]:invalid:not(:placeholder-shown) {
   margin:0 auto;
 }
 .footer-vector{
-  width: 1500px;
+  width: 100%;
 }
 .W-Wave{
-padding-left:700px;
+font-weight:400;
+font-size:16px;
+color:#A1A6B4;
+line-height: 103%;
+text-align: center;
 }
 .footer-img:hover{
   path{
@@ -745,30 +763,60 @@ padding-left:700px;
 .footer-img{
 transition: 0.5s ease;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .header{
+    max-width: 540px;
+    margin:0 auto;
+  }
+  .header-top{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+       "logo search"
+       "nav nav";
+  }
+  .nav{
+    grid-area: nav;
+  }
+  .nav ul{
+   gap:30px;
+    padding:0;
+  }
+  .logo{
+    grid-area: logo;
+  }
+  .search{
+    grid-area: search;
+    margin-left:190px;
+  }
   .hero-section{
-    width: 823px;
-    margin:0 auto;
-    gap:30px;
-  }
-  .home-last-item{
-    width: 823px;
+    width: 540px;
     margin:0 auto;
   }
-.Плейлисты-section{
-  width: 823px;
-  margin:0 auto;
-}
-  
-  .radio{
-    width:397px;
+  .mikrafon{
+    display: none;
+  }
+  .hero-paragraph{
+    width: 539px;
   }
   .Подкасты{
-    width: 823px;
+    width:540px;
     margin:0 auto;
   }
-  .wraper{
-    width: 823px;
+  .Подкасты-list{
+    grid-template-columns: 1fr;
+  }
+  .home-last-item{
+    width:540px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .radio{
+    width:540px;
+  }
+   .wraper{
+    width: 540px;
     margin:0 auto;
   }
   .нас-img{
@@ -780,28 +828,38 @@ transition: 0.5s ease;
   margin-top:100px;
   }
   .divider-img {
-  width: 397px;
   height: 255px;
   }
   .line{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .divider{
-    width: 397px;
-  }
   textarea{
-    width: 824px;
+    width: 540px;
   }
-.row{
-  display: flex;
+  .row input{
+    width:540px;
+    margin-bottom:15px;
+  }
+.нас-img{
+  display: none;
+}
+.нас{
+  display:none;
 }
   .Гости{
-    width: 823px;
+    width:540px;
     margin:0 auto;
   }
-  .footer-last-item{
-    width: 823px;
-    margin:0 auto;
+  .Гости-last-item{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .Гости-item{
+    padding:0;
+  }
+  .Гости-wrap{
+    width:362px;
+    margin-bottom: 30px;
   }
 }
