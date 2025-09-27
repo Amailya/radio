@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -5,8 +6,8 @@
 }
 @font-face{
 font-family:'Muller';
-src:url('../font/Muller\ Regular.woff2') format(woff2),
-url('../font/muller-medium.woff') format(woff);
+src:url('../font/MullerRegularItalic.woff2') format(woff2),
+url('../font/MullerRegularItalic.woff') format(woff);
 font-display: swap;
 font-weight: 400;
 font-style: normal;
@@ -21,8 +22,8 @@ font-style: normal;
 }
 @font-face{
 font-family:'Muller';
-src:url('../font/Muller\ Bold.woff2') format(woff2),
-url('../font/Muller\ Bold.woff') format(woff);
+src:url('../font/Muller\ Bold\ \(1\).woff2') format(woff2),
+url('../font/Muller\ Bold\ \(1\).woff') format(woff);
 font-display: swap;
 font-weight:700;
 font-style: normal;
@@ -104,6 +105,7 @@ stroke: #AA9DFA;
   margin: 0;
   padding: 0;
   height: 61px;
+  gap:10px;
   }
 .hero-span{
   font-weight: 700;
@@ -152,11 +154,11 @@ stroke: #AA9DFA;
   margin-top: 38px;
 }
 /*Подкасты*/
-.Podcasts-section{
+.podcasts-section{
   background-color: #D2D5DD;
   padding-bottom:94px;
 }
-.Podcasts{
+.podcasts{
   max-width:1110px;
   margin:0 auto;
 }
@@ -176,7 +178,7 @@ stroke: #AA9DFA;
 }
 .date {
   position: absolute;
-  bottom: 1px;  
+  bottom: 0px;  
   background:#E6E8EC;
   color:#121723;
   font-size: 14px;
@@ -200,7 +202,6 @@ stroke: #AA9DFA;
   line-height: 100%;
   color:#121712;
   margin:0;
-  padding-top:15px;
 }
 .Podcasts-paragraph{
   font-weight: 400;
@@ -218,11 +219,11 @@ stroke: #AA9DFA;
   padding-top:94px ;
 }
 /*Передачи*/
-.Broadcast {
+.broadcast {
   max-width: 1110px;
   margin: 0 auto;
   padding-top: 75px;
-  padding-bottom: 85px;
+  padding-bottom: 100px;
 }
 .title-main{
   font-weight: 400;
@@ -234,7 +235,7 @@ stroke: #AA9DFA;
 .grid-container {
   display: grid;
   grid-template-columns: 250px 1fr; 
-  gap: 20px;
+  gap: 30px;
   align-items: start;
 }
 .left-side {
@@ -242,7 +243,7 @@ stroke: #AA9DFA;
   flex-direction: column; 
   justify-content: flex-end; 
   gap: 16px; 
-  height: 95%;
+  height:100%;
 }
 .right-side {
   display: grid;
@@ -269,6 +270,8 @@ stroke: #AA9DFA;
   line-height: 100%; 
   color:#A1A6B4;
   padding-top:4px;
+  margin:0;
+  padding-bottom:10px;
 }
 .archive-btn{ 
   width:160px;
@@ -290,11 +293,13 @@ stroke: #AA9DFA;
 }
 .card {
   background: #f9f9f9; 
-  border: 1px solid #E6E8EC; 
+  border:1px solid #e4e4e4;
+  max-width:255px;
+  height: 260px;
 }
 .card img {
-  width: 100%;
-  height: auto;
+ max-width: 255px;
+  height:148px;
   margin-bottom: 10px;
 }
 .main-span{
@@ -328,7 +333,7 @@ stroke: #AA9DFA;
 .guests-section{
   background-color: #121723;
   padding-top: 90px;
-  padding-bottom: 94px;
+  padding-bottom: 80px;
 }
 .guests{
   max-width:1110px;
@@ -337,11 +342,15 @@ stroke: #AA9DFA;
 .guests-contant{
   display:flex;
   flex-wrap: wrap;
-  gap:50px;
-  margin-top:40px;
+  gap:40px;
+  margin-top:55px;
 }
 .guests-last-item{
   display:flex;
+}
+.guests-last-item img{
+  max-width: 432px;
+  height:272px;
 }
 .guests-title{
   font-weight: 400;
@@ -356,13 +365,16 @@ stroke: #AA9DFA;
   line-height: 150%;
   color:#A1A6B4;
   margin:0;
-  padding-top:12px;
+  padding-top:15px;
 }
 .guests-paragraph{
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   color:#A1A6B4;
+  padding-top:8px;
+  margin: 0;
+  max-width: 825px;
 }
 .guests-text{
   font-weight: 500;
@@ -376,7 +388,9 @@ stroke: #AA9DFA;
   line-height: 180%;
   font-size: 16px;
   color:#A1A6B4;
-  margin-bottom: 88px;
+ padding-bottom: 70px;
+  max-width: 458px;
+  margin:0;
 }
 .guests-item{
   padding-left:30px;
@@ -501,6 +515,7 @@ background-color: #292E39;
   line-height: 100%;
   color:#F0D288;
   margin-top:5px;
+  max-width: 441px;
 }
 .reklam-p{
   line-height: 180%;
@@ -508,6 +523,7 @@ background-color: #292E39;
   font-weight: 400;
   color:#fff;
   margin: 0;
+  max-width: 445px;
 }
 .reklam-text{
   font-weight: 500;
@@ -573,8 +589,8 @@ background-color: #292E39;
    }
 }
 }
-.yandex-img{
-  padding-left:5px;
+.yandex-go svg{
+  margin-left:5px;
   transition: 0.5s ease;
 }
 .radio-wrap{
@@ -583,7 +599,7 @@ background-color: #292E39;
 }
 .radio{
   display:block;
-  width: 640px;
+  max-width: 640px;
 }
 .label{
   position: absolute;
@@ -593,7 +609,7 @@ background-color: #292E39;
   width: 400px;
 }
 /*О нас*/
-.About-section{
+.about-section{
   background-color: #121723;
 }
 .vector{
@@ -603,7 +619,7 @@ background-color: #292E39;
  max-width: 1110px;
   margin:0 auto;
   padding-top: 90px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
 }
 .About-wrap{
   display: flex;
@@ -632,12 +648,12 @@ background-color: #292E39;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 255px;
+  max-width: 255px;
   height: 361px;
   margin-bottom:30px;
 }
 .divider-img {
-  width: 255px;
+  max-width: 255px;
   height: 255px;
 }
 .line{
@@ -706,16 +722,57 @@ textarea{
   color:#fff;
   margin-top: 15px;
 }
-.checkbox-area {
-  display: flex;
-  align-items: center; 
-  gap: 8px;      
-  margin-top: 30px;     
-}
-.list{
-  font-weight: 500;
-  font-size:12px;
+.container {
+  display: block;
+  padding-top:10px;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
   color:#fff;
+  font-weight: 500;
+  line-height:100%;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #121723; 
+  border: 2px solid #fff;    
+}
+.container:hover input ~ .checkmark {
+ background-color: #1a1f30; 
+}
+.container input:checked ~ .checkmark {
+  background-color: #121723; 
+  margin-top:10px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 3px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid #AA9DFA; 
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .row input:hover,
 textarea:hover{
@@ -741,6 +798,7 @@ input[type="email"]:invalid:not(:placeholder-shown) {
 .footer{
   background-color: #292E39;  
   padding-top:70px;
+  padding-bottom:15px;
 }
 .footer-last-item{
   max-width: 1110px;
@@ -794,6 +852,7 @@ input[type="email"]:invalid:not(:placeholder-shown) {
   font-size:16px;
   color:#A1A6B4;
   line-height: 103%;
+  margin:0;
   text-align: center;
 }
 .footer-img:hover{
