@@ -39,8 +39,8 @@ View how the layout adapts across desktop, tablet, and mobile devices
 
 Screenshots will be added below to demonstrate responsive design across various devices.
 
-📸 ![view tablet](image/Wave Radio.png)
-📸![view tablet](image/radio wave.png)
+📸 ![view tablet](image/Wave.png)
+📸![view tablet](image/radio.png)
 
 Technologies Used
 
